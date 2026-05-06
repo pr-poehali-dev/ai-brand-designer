@@ -317,9 +317,8 @@ export default function Index() {
               </p>
               <div className="flex flex-col gap-4">
                 {[
-                  { icon: "Mail", label: "Email", value: "anna@example.com" },
-                  { icon: "Phone", label: "Телефон", value: "+7 (999) 000-00-00" },
-                  { icon: "MapPin", label: "Город", value: "Москва" },
+                  { icon: "Mail", label: "Email", value: "AlexanderOrsk@mail.ru" },
+                  { icon: "MapPin", label: "Город", value: "Орск" },
                 ].map(item => (
                   <div key={item.label} className="flex items-center gap-4" style={{ borderTop: "1px solid var(--line)", paddingTop: "1rem" }}>
                     <Icon name={item.icon} fallback="Mail" size={16} style={{ color: "var(--stone)" }} />
@@ -329,6 +328,16 @@ export default function Index() {
                     </div>
                   </div>
                 ))}
+                <div className="flex items-center gap-4" style={{ borderTop: "1px solid var(--line)", paddingTop: "1rem" }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{ color: "var(--stone)", flexShrink: 0 }}>
+                    <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.5"/>
+                    <path d="M8 11.5c0-.828.672-1.5 1.5-1.5h5c.828 0 1.5.672 1.5 1.5v2c0 .828-.672 1.5-1.5 1.5H13l-2 2v-2H9.5C8.672 15 8 14.328 8 13.5v-2z" fill="currentColor"/>
+                  </svg>
+                  <div>
+                    <div className="text-xs tracking-wide uppercase mb-0.5" style={{ color: "var(--stone)" }}>MAX</div>
+                    <a href="https://max.ru" target="_blank" rel="noopener noreferrer" className="font-body text-sm hover:opacity-60 transition-opacity">Написать в MAX</a>
+                  </div>
+                </div>
               </div>
             </div>
 
